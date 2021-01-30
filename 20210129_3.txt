@@ -1,0 +1,23 @@
+﻿/*Задача 3. Напишете функция, която връща резултат (а+в)*4.*/
+#include <stdio.h>
+
+double add(void){
+        int a,b;
+
+        printf("Please enter a value of a ");
+        scanf("%d",&a);
+
+        printf("Please enter a value of b ");
+        scanf("%d",&b);
+
+    return (a+b)*4 ;
+}
+
+int main (void){
+
+    int result=add();
+    printf("The area is: %d\n",result);
+
+    return 0;
+}
+ 

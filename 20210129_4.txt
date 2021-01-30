@@ -1,0 +1,26 @@
+﻿/*Задача 4. Напишете функция, която връща резултат a*2 + b*c.*/
+#include <stdio.h>
+
+int add(void){
+
+        int a,b,c;
+
+        printf("Please enter an integer value for a: ");
+        scanf("%d",&a);
+
+        printf("Please enter an integer value for b: ");
+        scanf("%d",&b);
+
+        printf("Please enter an integer number for c: ");
+        scanf("%d",&c);
+
+    return a*2+b*c;
+}
+
+int main (void){
+
+    int result=add();
+    printf("The result of a*2+b*c is: %d\n",result);
+    return 0;
+}
+ 

@@ -1,0 +1,36 @@
+﻿/*Задача 6. Напишете програма на С, която чрез функция да обръща
+десетични числа в двоични.*/
+#include <stdio.h>
+
+int decimalToBinary(void){
+    
+  int number,c,k;
+
+  printf("Enter an integer in decimal number system\n");
+  scanf("%d", &number);
+
+  printf("%d in binary number system is:\n", number);
+
+  for (c = 31; c >= 0; c--){
+
+       	k = number >> c;
+	
+        if (k & 1)
+            printf("1");
+        else
+            printf("0");
+  }
+
+  printf("\n");
+
+  return 0;
+}
+
+
+int main (void){
+
+   decimalToBinary();
+    
+    return 0;
+}
+ 

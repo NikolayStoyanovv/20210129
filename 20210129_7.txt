@@ -1,0 +1,37 @@
+﻿/*Задача 7. Напишете програма на С, която съдържа 2 функции.
+1.Първата смята лице на правоъгълен триъгълник.
+2.Втората използва лицето на триъгълника, за да сметне лице на
+четириъгълник със същите дължини на страните, като раменете на
+триъгълника.
+Напишете прототипите на функциите най-отгоре, а телата им под
+мейн функцията.*/
+#include<stdio.h>
+double result1;
+double sTriangle();
+double sQuadrangle();
+
+int main(){
+
+    double result=sTriangle();
+    double result2=sQuadrangle();
+
+    printf("The area of 90°degree triangle is: %lf\n",result);
+    printf("The area of quadrangle with the same sides\n");
+    printf("like triangle is: %lf\n",result2);
+    return 0;
+}
+double sTriangle(){
+        double a,b;
+        printf("Please enter any value of side a:");
+        scanf("%lf",&a);
+
+        printf("Please enter any value of side b:");
+        scanf("%lf",&b);
+        
+        result1=(a*b);
+    return result1;
+}
+double sQuadrangle(){
+ 
+    return result1*2;
+}

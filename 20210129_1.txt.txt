@@ -1,0 +1,25 @@
+﻿/*Задача 1.Направете глобална константа pi = 3.14, както правихме в
+предишния урок. Напишете функция, която изчислява площта на кръг, на
+която като параметър подаваме радиуса и връщаме площта на кръга.
+Използвайте глобалната константа pi, за да извършите изчисленията.
+Извикайте функцията в main() и покажете резултата.*/
+#include <stdio.h>
+extern const double pi;
+const double pi=3.14;
+
+double sCircle(double radius){
+  
+    return pi*radius*radius;
+}
+
+int main (void){
+  	double radius;
+
+  	printf("Please enter a value for radius:\n");
+  	scanf("%lf",&radius);
+
+   	double result=sCircle(radius);
+   	printf("The area is: %lf\n",result);
+  return 0;
+}
+ 
